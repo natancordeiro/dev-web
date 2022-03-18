@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Preencha o formulário
+    </h1>
+    <form>
+        <!-- Nome -->
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" autofocus> <br><br>
+
+        <!--- REQUIRED torna o e-mail OBRIGATÓRIO -->
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required> <br><br>
+
+        <!-- Número com o MIN e MAX -->
+        <label for="numero">Número</label>
+        <input type="number" id="numero" min="1" max="20" step="5"> <br><br>
+
+        <!-- URL com ex ao fundo utilizando o "PLACEHOLD" -->
+        <label for="url">Url</label>
+        <input type="url" name="url" id="url" placeholder="ex:http://www.google.com"> <br><br>
+
+        <!-- Serch -->
+        <label for="pesquisa">Pesquisa</label>
+        <input type="search" name="pesquisa" id="pesquisa"> <br><br>
+
+        <!-- Range com botão de arrastar -->
+        <label for="range">Range</label>
+        <input type="range" name="range" id="range" min="1" max="20" value="10"><br><br>
+
+        <!-- Data -->
+        <label for="Data">Data</label>
+        <input type="date" name="data" id="data"><br><br>
+
+        <!-- Cor -->
+        <label for="cor">Cor</label>
+        <input type="color" name="cor" id="cor"> <br><br>
+
+        <input type="submit" value="enviar">
+
+    </form>
+</body>
+</html>
