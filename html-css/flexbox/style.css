@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+#conteiner {
+
+    background-color: lightgray;
+    
+    height: 400px;
+    display: flex;
+
+    /* Valores - FLEX-DIRECTION
+        row | row-revere | column-reverse
+    */
+    flex-direction: row;
+
+    /* Preopriedades - FLEX-WRAP (QUEBRA)
+        nowrap | wrap | wrap-reverse
+
+        NOWRAP - ele vai achatar para caber todos os itens, modificando seu tamanho
+
+        WRAP - ele vai se ajustar para caber dentro do conteúdo sem modificar o tmanho do item
+    */
+    flex-wrap: nowrap;
+
+    /*  flex-start | flex-end | center | space-between | space-around
+     */
+
+     /* ALINHAMENTO HORIZONTAL */
+    justify-content: space-around;
+
+    /* stretch | center | flex-start | flex-end | baseline  
+     */
+     /* ALINHAMENTO VERTICAL */
+    align-items: center;
+
+
+}
+.item {
+    background-color: white;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
