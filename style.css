@@ -16,12 +16,36 @@
     background-color: white;
     border: 1px solid black;
     margin: 10px;
-    width: 100px;
+    /* width: 200px; */
     height: 100px;
 
+    /* Define proporção de espaço ocupado por um item ( de AUMENTO do item) */
+    flex-grow: 0;
+
+    /* Define a capacidade de redução de tamanho do item. */
+    flex-shrink: 1;
+
+    /* Indica o tamanho inicial do flex item antes da distribuição do espaço restante. */
+    flex-basis: 200px;
+
 }
 
+.item1 {
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+}
+.item2 {
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+}
+.item3 {
+    /* flex-grow: 3; */
+    /* flex-shrink: 5; */
+}
+
+
+/* 
 .ordem {
     order: -1;
-}
+} */
 
